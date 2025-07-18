@@ -33,9 +33,7 @@ def generate_sensor_data():
     apparent_power=V_rms*I_rms
     Energy=(active_power*duration)/3600
     power_factor=active_power/apparent_power
-    
-
-    dictionary={
+    return{
         "V_rms": round(V_rms,2),
         "I_rms": round(I_rms,2),
         "Active_Power": round(active_power,2),
@@ -44,10 +42,7 @@ def generate_sensor_data():
         "Energy_kWh" : round(Energy,3),
         "Timestamp": datetime.datetime.now().isoformat()
     }
-    return dictionary
-a=generate_sensor_data()
-b=a.get("Timestamp")
-print(b)   
+
     
 
              
