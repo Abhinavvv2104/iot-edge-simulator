@@ -33,17 +33,16 @@ def generate_sensor_data():
     apparent_power=V_rms*I_rms
     Energy=(active_power*duration)/3600
     power_factor=active_power/apparent_power
-    return{
-        "V_rms": round(V_rms,2),
-        "I_rms": round(I_rms,2),
-        "Active_Power": round(active_power,2),
-        "Apparent_Power": round(apparent_power,2),
-        "Power_Factor": round(power_factor,3),
-        "Energy_kWh" : round(Energy,3),
+    return {
+        "V_rms": round(float(V_rms), 2),
+        "I_rms": round(float(I_rms), 2),
+        "Active_Power": round(float(active_power), 2),
+        "Apparent_Power": round(float(apparent_power), 2),
+        "Power_Factor": round(float(power_factor), 3),
+        "Energy_kWh": round(float(Energy), 3),
         "Timestamp": datetime.datetime.now().isoformat()
     }
-
-    
+        
 
              
         
