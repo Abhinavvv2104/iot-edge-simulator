@@ -24,14 +24,14 @@ Designed for testing IoT pipelines, dashboards, and cloud integrations.
 
 ### 1. Start MQTT Broker
 (Make sure Mosquitto is installed)
-
 mosquitto -v
+
 2. Run the Publisher
-
 python src/main.py
-3. Run the Logger (in another terminal)
 
+3. Run the Logger (in another terminal)
 python data/subscriber_logger.py
+
 📦 Requirements
 Install dependencies:
 
