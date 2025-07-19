@@ -1,4 +1,4 @@
-# 🛰️ IoT Edge Emulator with Anomaly Detection & MQTT Streaming
+#  IoT Edge Emulator with Anomaly Detection & MQTT Streaming
 
 A Python-based project that simulates electrical sensor data, performs edge-level processing (like anomaly detection and power tracking), and publishes results over MQTT.
 
@@ -6,21 +6,21 @@ Designed for testing IoT pipelines, dashboards, and cloud integrations.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔌 **Sensor Emulator**: Simulates real-time voltage, current, power, energy, and power factor readings
-- 🧠 **Edge Processing**:
+-  Sensor Emulator: Simulates real-time voltage, current, power, energy, and power factor readings
+-  Edge Processing:
   - Simple Moving Average (SMA)
   - Voltage & Current Anomaly Detection
   - Energy consumption tracking
   - Rolling average of Power Factor
-- 📡 **MQTT Publishing**: Publishes all processed data to a local MQTT broker
-- 🗂️ **CSV Data Logger**: MQTT subscriber that logs incoming data to a `.csv` file
-- 💡 **Modular Design**: Each component (emulator, edge processor, MQTT client) is cleanly separated
+-  MQTT Publishing: Publishes all processed data to a local MQTT broker
+-  CSV Data Logger: MQTT subscriber that logs incoming data to a `.csv` file
+- Modular Design: Each component (emulator, edge processor, MQTT client) is cleanly separated
 
 ---
 
-## 🛠️ How to Run
+##  How to Run
 
 ### 1. Start MQTT Broker
 (Make sure Mosquitto is installed)
@@ -32,11 +32,11 @@ python src/main.py
 3. Run the Logger (in another terminal)
 python data/subscriber_logger.py
 
-📦 Requirements
+Requirements
 Install dependencies:
-
 pip install -r requirements.txt
-📊 Example Output
+
+Example Output
 json
 
 {
@@ -48,10 +48,11 @@ json
   "Total_Energy_kWh": 0.032,
   "Avg_Power_Factor": 0.91
 }
-👨‍💻 Author
+
+Author
 Abhinav Singh
 B.Tech EEE + IoT @ BPIT
 Passionate about Embedded Systems, IoT, and Edge Intelligence
 
-📄 License
+License
 MIT License — feel free to use, modify, and share.
