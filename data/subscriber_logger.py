@@ -7,7 +7,6 @@ import os
 LOG_FILE = "data/mqtt_data_log.csv"
 TOPIC = "iot/sensor/data"
 
-# Create the log file with headers if not already present
 if not os.path.exists(LOG_FILE):
     with open(LOG_FILE, mode="w", newline="") as file:
         writer = csv.writer(file)
@@ -40,7 +39,6 @@ def on_message(client, userdata, msg):
                 data.get("SMA_Voltage"),
                 data.get("SMA_Current"),
                 data.get("Anomaly"),
-                data.get("Anomaly_Reason")
             ])
     except Exception as e:
         print("Error logging data:", e)
