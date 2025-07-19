@@ -35,7 +35,7 @@ def on_message(client, userdata, msg):
                 data.get("Active_Power"),
                 data.get("Apparent_Power"),
                 data.get("Power_Factor"),
-                data.get("Energy_kWh"),
+                data.get("Total_Energy_kWh"),
                 data.get("SMA_Voltage"),
                 data.get("SMA_Current"),
                 data.get("Anomaly"),
